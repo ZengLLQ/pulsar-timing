@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pulsar-timing"
+version = "0.1.0"
+description = "High-precision PTA astrometry, relativistic delays, and Hellings-Downs GWB optimal statistic"
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+authors = [
+    {name = "ZengLLQ", email = "zengllq@users.noreply.github.com"}
+]
+dependencies = [
+    "numpy>=1.22.0",
+]
+
+[project.optional-dependencies]
+test = [
+    "pytest>=7.0.0",
+]
